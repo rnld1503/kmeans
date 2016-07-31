@@ -6,15 +6,16 @@
  * 2015
  *
 */
-package com.dataonfocus.clustering;
+package pe.com.upc.ai.clustering;
+
+import static pe.com.upc.ai.clustering.Util.plotPoins;
+import static pe.com.upc.ai.clustering.Util.toParse;
 
 import java.util.ArrayList;
 import java.util.List;
-import com.dataonfocus.clustering.Util;
-import static com.dataonfocus.clustering.Util.toParse;
-import static com.dataonfocus.clustering.Util.plotPoins;
 
-import com.dataonfocus.clustering.Point;
+import pe.com.upc.ai.clustering.Point;
+import pe.com.upc.ai.clustering.Util;
 
 public class KMeans {
 

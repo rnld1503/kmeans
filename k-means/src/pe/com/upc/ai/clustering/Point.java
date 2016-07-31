@@ -1,9 +1,10 @@
-package com.dataonfocus.clustering;
+package pe.com.upc.ai.clustering;
+
+import static pe.com.upc.ai.clustering.Util.toParse;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-import static com.dataonfocus.clustering.Util.toParse;
 
 public class Point {
 
