@@ -30,7 +30,7 @@ public class Util {
     	s.append("############################################################	\n");
     	s.append("# The present implementation of k-means algorithm in java	\n");
     	s.append("# generates a number of points in cartesian plane randomly,	\n");
-    	s.append("# given a number of clusters, start to iterating to looking 	\n");
+    	s.append("# given a number of clusters, start iterating to looking 	\n");
     	s.append("# for clustering all points.	\n");
     	s.append("# \n");
     	s.append("# UPC - Systems Engineering   								\n");
