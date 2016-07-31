@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import com.dataonfocus.clustering.Util;
 import static com.dataonfocus.clustering.Util.toParse;
+import static com.dataonfocus.clustering.Util.plotPoins;
 
 import com.dataonfocus.clustering.Point;
 
@@ -44,6 +45,7 @@ public class KMeans {
     public void init() {
     	//Create Points
     	points = Point.createRandomPoints(MIN_COORDINATE,MAX_COORDINATE,NUM_POINTS);
+    	plotPoins(points);
     	
     	//Create Clusters
     	//Set Random Centroids
@@ -106,9 +108,10 @@ public class KMeans {
         	}
         }
         
-        System.out.println("################################");
-    	System.out.println("#Total Iterations: " + iteration);
-    	System.out.println("################################\n");
+        System.out.println("############################################################");
+    	System.out.println("# Total Iterations: " + iteration);
+    	System.out.println("# Review iteration " + iteration + " to see elements in each cluster.");
+    	System.out.println("############################################################\n");
     }
     
     private void clearClusters() {

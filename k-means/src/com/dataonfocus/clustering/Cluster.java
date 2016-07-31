@@ -50,7 +50,7 @@ public class Cluster {
 		System.out.println(" [Centroid: " + centroid + "]");
 		
 		if(!points.isEmpty()){
-			System.out.println(" [Points: \n");
+			System.out.println(" [Points:");
 			for(Point p : points) {
 				System.out.println("  -" + p);
 			}
