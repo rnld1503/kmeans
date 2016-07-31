@@ -34,7 +34,7 @@ public class KMeans {
     }
     
     public static void main(String[] args) {
-    	Util.plotInicialMessage(NUM_POINTS, NUM_CLUSTERS );
+    	Util.plotInicialMessage(NUM_POINTS, NUM_CLUSTERS, MIN_COORDINATE, MAX_COORDINATE );
     	KMeans kmeans = new KMeans();
     	kmeans.init();
     	kmeans.calculate();
@@ -55,6 +55,8 @@ public class KMeans {
     	}
     	
     	//Print Initial state
+    	System.out.println("Init centroids randomly:");
+    	System.out.println("========================");
     	plotClusters();
     }
 
@@ -92,9 +94,9 @@ public class KMeans {
         	for(int i = 0; i < lastCentroids.size(); i++) {
         		distance += toParse(Point.distance(lastCentroids.get(i),currentCentroids.get(i)));
         	}
-        	System.out.println("#################\n");
+
         	System.out.println("=============");
-        	System.out.println("Iteration: " + iteration);
+        	System.out.println("ITERATION: " + iteration);
         	System.out.println("=============");
         	System.out.println("Centroid distances: " + distance + "\n");
         	plotClusters();

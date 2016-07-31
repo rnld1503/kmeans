@@ -20,29 +20,27 @@ public class Util {
         return resultado;
     }
     
-    
-    
-    
-    public static void plotInicialMessage(int NUM_POINTS, int NUM_CLUSTERS){
+    public static void plotInicialMessage(int NUM_POINTS, int NUM_CLUSTERS, int MIN_COORDINATE, int MAX_COORDINATE){
     	
     	StringBuilder s = new StringBuilder();
     	
-    	s.append("##################################\n");
-    	s.append("#K-MEANS ALGORITHM \n");
-    	s.append("##################################\n");
-    	s.append("#UPC - Systems Engineering   		\n");
-    	s.append("#Course: Artificial Intelligence	\n");
-    	s.append("#2016-01 							\n");
-    	s.append("#Code adapted from:  \n");
-    	s.append("# http://www.dataonfocus.com/k-means-clustering-java-code/ \n");
-    	s.append("##################################\n");
-    	s.append("#Data entry\n");
-    	s.append("#=================\n");
-    	s.append("#Number of Clusters\t: " + NUM_CLUSTERS + "\n");
-    	s.append("#Number of Points \t: " + NUM_POINTS + "\n");
-    	s.append("#Points\t: points are generated \n\trandomly in first iteration.\n");
-    	s.append("##################################\n");
-    	System.out.println(s.toString()); 
+    	s.append("############################################################	\n");
+    	s.append("# K-MEANS ALGORITHM 											\n");
+    	s.append("############################################################	\n");
+    	s.append("# UPC - Systems Engineering   								\n");
+    	s.append("# Course: Artificial Intelligence								\n");
+    	s.append("# 2016-01 													\n");
+    	s.append("# Code adapted from:  										\n");
+    	s.append("# http://www.dataonfocus.com/k-means-clustering-java-code/ 	\n");
+    	s.append("############################################################	\n");
+    	s.append("# Data entry													\n");
+    	s.append("############################################################	\n");
+    	s.append("# Number of Clusters\t: " + NUM_CLUSTERS + "\n");
+    	s.append("# Number of Points \t: " + NUM_POINTS + "\n");
+    	s.append("# Points : Are generated randomly in first iteration	\n");
+    	s.append("#          in the cartesian plane from "+MIN_COORDINATE+" to "+MAX_COORDINATE+" \n");
+    	s.append("############################################################	\n");
+    	System.out.println(s.toString());
     	
     }
 }
