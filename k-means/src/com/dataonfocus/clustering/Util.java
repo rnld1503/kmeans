@@ -28,18 +28,19 @@ public class Util {
     	StringBuilder s = new StringBuilder();
     	
     	s.append("##################################\n");
-    	s.append("#Algoritmo K-Mean	\n");
-    	s.append("#=================================\n");
-    	s.append("#UPC-Ingenieria de Sistemas 		\n");
-    	s.append("#Curso: Inteligencia Artificial	\n");
-    	s.append("#2016-01 							\n");
-    	s.append("#									\n");
+    	s.append("#K-MEANS ALGORITHM \n");
     	s.append("##################################\n");
-    	s.append("#Datos del entrada\n");
+    	s.append("#UPC - Systems Engineering   		\n");
+    	s.append("#Course: Artificial Intelligence	\n");
+    	s.append("#2016-01 							\n");
+    	s.append("#Code adapted from:  \n");
+    	s.append("# http://www.dataonfocus.com/k-means-clustering-java-code/ \n");
+    	s.append("##################################\n");
+    	s.append("#Data entry\n");
     	s.append("#=================\n");
-    	s.append("#Numero de Puntos \t: " + NUM_POINTS + "\n");
-    	s.append("#Numero de Clusters\t: " + NUM_CLUSTERS + "\n");
-    	s.append("#									\n");
+    	s.append("#Number of Clusters\t: " + NUM_CLUSTERS + "\n");
+    	s.append("#Number of Points \t: " + NUM_POINTS + "\n");
+    	s.append("#Points\t: points are generated \n\trandomly in first iteration.\n");
     	s.append("##################################\n");
     	System.out.println(s.toString()); 
     	

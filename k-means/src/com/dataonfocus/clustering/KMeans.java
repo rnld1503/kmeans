@@ -95,8 +95,8 @@ public class KMeans {
         	System.out.println("#################\n");
         	System.out.println("=============");
         	System.out.println("Iteration: " + iteration);
-        	System.out.println("=============\n");
-        	System.out.println("Centroid distances: " + distance);
+        	System.out.println("=============");
+        	System.out.println("Centroid distances: " + distance + "\n");
         	plotClusters();
         	        	
         	if(distance == 0) {
@@ -105,7 +105,7 @@ public class KMeans {
         }
         
         System.out.println("################################");
-    	System.out.println("#Numero total de Iteraciones: " + iteration);
+    	System.out.println("#Total Iterations: " + iteration);
     	System.out.println("################################\n");
     }
     
